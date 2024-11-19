@@ -1,0 +1,36 @@
+#cabecalho {
+    display: flex;
+    width: auto;
+    background-color: #FFC0CB;
+    padding: 100px;
+    padding-left: 30px;
+    align-items: center;
+}
+
+#SEGUNDA {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+#segunda {
+    margin-left: auto;
+}
+
+input {
+    width: 350px;
+    height: 30px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.link>a {
+    padding: 10px;
+    text-decoration: none;
+    color: #006868;
+    font-size: 16px;
+}
+
+#terceiro {
+    margin-left: auto;
+}
