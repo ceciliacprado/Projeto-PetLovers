@@ -43,6 +43,26 @@ input {
     margin-left: auto;
 }
 
+.chat-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .chat-input:focus {
+    border-color: #2563eb; /* Azul */
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.5); /* Azul */
+  }
+
+
+
+
 #sec1 {
     display: flex;
     flex-direction: row; 
@@ -87,41 +107,73 @@ input {
     margin-bottom: 20px;
 }
 
-#sec2 {
-    padding: 100px;
-    background-color: #FCDDE2;
+
+
+
+
+section {
+    padding: 50px 20px;
     text-align: center;
 }
 
-#sec2 h2 {
+section h2 {
+    font-size: 24px;
+    color: #333;
     margin-bottom: 20px;
 }
 
-#sec2 p {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
 }
 
-#sec2 button {
-    border: none;
+.produto {
+    background: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    size: 60px;
-    padding: 15px;
-    background-color: #006868;
-    color: white;
-    font-weight: bold;
-    margin: 10px;
-}
-
-#sec3 {
-    padding: 50px;
+    padding: 10px;
     text-align: center;
 }
 
-#sec3 img {
-    height: 400px;
+.produto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
+
+.produto p {
+    font-size: 14px;
+    color: #555;
+}
+
+.produto h4 {
+    font-size: 16px;
+    color: #006868;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #006868;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #004949;
+}
+
+
+
+
+
+
 
 footer {
     background-color: #FFC0CB;
